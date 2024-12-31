@@ -22,11 +22,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 30px;
+      gap: 20px;
       background: rgba(0, 0, 0, 0.6);
       padding: 15px 30px;
       border-radius: 50px;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      flex-wrap: wrap; /* Tự động xuống hàng khi không đủ chỗ */
     }
 
     .menu-item {
@@ -72,6 +73,47 @@
       opacity: 1;
       transform: translateY(-10px);
     }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .menu-bar {
+        flex-direction: row;
+        padding: 10px 20px;
+        gap: 15px; /* Khoảng cách giữa các icon nhỏ hơn */
+      }
+
+      .menu-item {
+        width: 60px;
+        height: 60px;
+      }
+
+      .menu-item img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .menu-bar {
+        flex-direction: column; /* Icon xếp theo cột trên màn hình nhỏ */
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .menu-item {
+        width: 50px;
+        height: 50px;
+      }
+
+      .menu-item img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .tooltip {
+        bottom: 60px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -79,9 +121,9 @@
   <div class="menu-bar">
     <!-- Item 1 -->
     <div class="menu-item">
-      <a href="index.html">
-        <img src="icons/tarot.png" alt="Tarot" />
-      </a>
+        <a href="index.html">
+            <img src="icons/tarot.png" alt="Tarot" />
+          </a>    
       <div class="tooltip">Rút Thẻ Tarot</div>
     </div>
     <!-- Item 2 -->
