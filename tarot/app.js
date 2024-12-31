@@ -80,7 +80,7 @@ drawButton.addEventListener('click', () => {
     // Reset thẻ
     cardImage.classList.add('flip'); // Thêm hiệu ứng lật ngược lại
     setTimeout(() => {
-      cardImage.src = 'card-back.jpg';
+      cardImage.src = 'tarot/card-back.jpg';
       result.style.display = 'none';
       drawButton.textContent = 'Rút Thẻ';
 

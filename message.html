@@ -3,13 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chữ Chạy Nghệ Thuật</title>
+  <title>Thông điệp vũ trụ</title>
   <link rel="stylesheet" href="message/style.css" />
+  <style>
+    /* Title Styling */
+    #title {
+      font-size: 8em;
+      text-align: center;
+      color: #ff4500;
+      animation: flame 3s infinite;
+      margin-bottom: 100px; /* Tạo khoảng cách dưới */
+    }
+
+    @keyframes flame {
+      0% { text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 15px #ff4500, 0 0 20px #ff4500, 0 0 25px #ff4500, 0 0 30px #ff4500, 0 0 35px #ff4500; }
+      50% { text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 50px #ff4500, 0 0 60px #ff4500, 0 0 70px #ff4500; }
+      100% { text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 15px #ff4500, 0 0 20px #ff4500, 0 0 25px #ff4500, 0 0 30px #ff4500, 0 0 35px #ff4500; }
+    }
+
+    /* Container and Box Styling */
+    .text-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .text-box {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block; /* Giữ cho box không chiếm toàn bộ chiều ngang */
+    }
+  </style>
 </head>
 <body>
+  <!-- Tiêu đề nằm riêng phía trên -->
+  <h1 id="title">Thông điệp vũ trụ</h1>
+  
+  <!-- Container chứa text box -->
   <div class="text-container">
     <div id="text-box" class="text-box"></div>
   </div>
+
+  <!-- Button Container -->
+  <div class="button-container"></div>
   <script src="message/script.js"></script>
 </body>
 </html>
