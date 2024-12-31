@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Thanh Bar</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Định dạng tổng thể */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 30px;
+      border-radius: 50px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-item {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.2);
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-item img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .tooltip {
+      position: absolute;
+      bottom: 90px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: all 0.3s ease;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .menu-item:hover .tooltip {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+<body>
+  <!-- Thanh menu -->
+  <div class="menu-bar">
+    <!-- Item 1 -->
+    <div class="menu-item">
+      <a href="index.html">
+        <img src="icons/tarot.png" alt="Tarot" />
+      </a>
+      <div class="tooltip">Rút Thẻ Tarot</div>
+    </div>
+    <!-- Item 2 -->
+    <div class="menu-item">
+      <img src="icons/settings.png" alt="Cài Đặt" />
+      <div class="tooltip">Cài Đặt</div>
+    </div>
+    <!-- Item 3 -->
+    <div class="menu-item">
+      <img src="icons/guide.png" alt="Hướng Dẫn" />
+      <div class="tooltip">Hướng Dẫn</div>
+    </div>
+    <!-- Item 4 -->
+    <div class="menu-item">
+      <img src="icons/info.png" alt="Thông Tin" />
+      <div class="tooltip">Thông Tin</div>
+    </div>
+  </div>
+</body>
+</html>
