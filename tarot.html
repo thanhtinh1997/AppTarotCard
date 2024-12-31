@@ -4,7 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rút Thẻ Quyết Định</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="tarot/style.css" />
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #draw-card {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #back-to-menu {
+      background-color: #f44336;
+      color: white;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="app-container">
@@ -12,7 +32,7 @@
       <h1 id="title">Rút Thẻ Tarot Quyết Định</h1>
       <!-- Vùng chứa lá bài -->
       <div class="card-container" id="card-container" >
-        <img id="card-image" src="card-back.jpg" alt="Lá bài" />
+        <img id="card-image" src="tarot/card-back.jpg" alt="Lá bài" />
       </div>
       <!-- Hiển thị kết quả -->
       <div class="result" id="result" style="display: none;" >
@@ -22,9 +42,9 @@
       <!-- Nút rút thẻ -->
       <button id="draw-card">Rút Thẻ</button>
       <!-- Nút back về menu -->
-      <button id="back-to-menu" onclick="location.href='menu.html';" style="margin-top: 10px;">Back to Menu</button>
+      <button id="back-to-menu" onclick="location.href='menu.html';">Back to Menu</button>
     </div>
   </div>
-  <script src="app.js"></script>
+  <script src="tarot/app.js"></script>
 </body>
 </html>

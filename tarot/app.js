@@ -8,37 +8,37 @@ const drawButton = document.getElementById('draw-card');
 const tarotCards = [
   {
     name: "The Fool",
-    image: "fool.jpg",
+    image: "tarot/fool.jpg",
     prediction: "Khởi đầu mới, cơ hội bất ngờ.",
     advice: "Hãy can đảm và nắm bắt cơ hội."
   },
   {
     name: "The Magician",
-    image: "magician.jpg",
+    image: "tarot/magician.jpg",
     prediction: "Sức mạnh và sự sáng tạo đang ở đỉnh cao.",
     advice: "Hãy tận dụng kỹ năng của bạn để tạo ra thành công."
   },
   {
     name: "The Lovers",
-    image: "lovers.jpg",
+    image: "tarot/lovers.jpg",
     prediction: "Tình yêu, sự lựa chọn quan trọng.",
     advice: "Hãy lắng nghe trái tim của bạn trước khi quyết định."
   },
   {
     name: "The Tower",
-    image: "tower.jpg",
+    image: "tarot/tower.jpg",
     prediction: "Thay đổi đột ngột, sự sụp đổ.",
     advice: "Chấp nhận thay đổi để phát triển mạnh mẽ hơn."
   },
   {
     name: "The Sun",
-    image: "sun.jpg",
+    image: "tarot/sun.jpg",
     prediction: "Niềm vui, hạnh phúc và thành công.",
     advice: "Hãy tận hưởng khoảnh khắc này và tiếp tục tiến bước."
   },
   {
     name: "Death",
-    image: "death.jpg",
+    image: "tarot/death.jpg",
     prediction: "Kết thúc một chu kỳ, sự chuyển đổi.",
     advice: "Hãy sẵn sàng từ bỏ cái cũ để đón nhận cái mới."
   }
