@@ -3,55 +3,45 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Đảm bảo luôn chiếm toàn bộ chiều cao màn hình */
   background-color: #121212;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
+  overflow: auto; /* Cho phép cuộn nếu nội dung quá dài */
 }
 
 .text-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  justify-content: flex-start; /* Bắt đầu từ bên trái */
+  align-items: flex-start; /* Căn trên cùng để nội dung không bị cắt */
+  padding: 5%;
   border: 3px solid #00ffcc;
   border-radius: 10px;
   background: linear-gradient(135deg, #333333, #1a1a1a);
   box-shadow: 0 4px 10px rgba(0, 255, 204, 0.6);
-  width: 60%;
-  height: 200px;
-  overflow: hidden;
+  width: 90vw; /* Chiều rộng tối đa 90% màn hình */
+  max-width: 500px; /* Giới hạn tối đa để không quá to */
+  height: auto; /* Chiều cao tự động mở rộng */
+  max-height: 70vh; /* Giới hạn chiều cao tối đa để không chiếm hết màn hình */
+  overflow-y: auto; /* Cho phép cuộn dọc nếu nội dung dài */
   margin-bottom: 20px;
 }
 
 .text-box {
   color: #00ffcc;
-  font-size: 2rem;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid #00ffcc;
-  animation: blink 0.8s step-end infinite, typing 4s steps(40, end);
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+  font-size: clamp(1rem, 5vw, 2rem); /* Tự động scale kích thước chữ */
+  white-space: normal; /* Cho phép xuống dòng */
+  word-wrap: break-word; /* Ngắt dòng khi từ quá dài */
+  overflow: visible; /* Hiển thị toàn bộ nội dung */
+  border-right: none; /* Loại bỏ hiệu ứng gõ chữ */
+  animation: none; /* Tắt hiệu ứng gõ chữ để tránh mất nội dung */
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 5vw;
+  flex-wrap: wrap;
 }
 
 button {
@@ -60,7 +50,7 @@ button {
   border-radius: 5px;
   background-color: #00ffcc;
   color: #121212;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 3vw, 1rem);
   cursor: pointer;
   transition: background-color 0.3s;
 }
