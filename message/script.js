@@ -16,7 +16,7 @@ async function loadJSON() {
   return new Promise((resolve, reject) => {
     const xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'https://thanhtinh1997.github.io/AppTarotCard/message/data/love_message.json', true);
+    xobj.open('GET', 'https://thanhtinh1997.github.io/AppTarotCard/message/data/message.json', true);
     xobj.send();
 
     xobj.onreadystatechange = function () {
@@ -33,7 +33,14 @@ async function loadJSON() {
 
 // Hàm lấy thông điệp ngẫu nhiên
 function getRandomMessage(json) {
-  const messages = [...json.love_messages.positive, ...json.love_messages.negative];
+  const messages = [...json.messages.love_positive,
+                    ...json.messages.love_negative,
+                    ...json.messages.love_neutral,
+                    ...json.messages.life_neutral,
+                    ...json.messages.life_positive,
+                    ...json.messages.life_negative
+                  ];
+  console.log(messages);
   const randomIndex = Math.floor(Math.random() * messages.length);
   return messages[randomIndex].Message;
 }

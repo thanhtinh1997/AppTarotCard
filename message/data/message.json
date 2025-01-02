@@ -1,6 +1,6 @@
 {
-    "love_messages": {
-      "positive": [
+    "messages": {
+      "love_positive": [
         {"ID": 1, "Message": "Tình yêu là ngọn lửa khiến cuộc sống của chúng ta thêm rực rỡ."},
         {"ID": 2, "Message": "Khi yêu thương, bạn sẽ nhận ra mọi điều đều trở nên ý nghĩa."},
         {"ID": 3, "Message": "Một trái tim ấm áp có thể sưởi ấm cả thế giới."},
@@ -22,7 +22,7 @@
         {"ID": 19, "Message": "Mỗi khoảnh khắc bên người bạn yêu đều là một kỷ niệm quý giá."},
         {"ID": 20, "Message": "Tình yêu là động lực để chúng ta trở thành phiên bản tốt nhất của chính mình."}
       ],
-      "negative": [
+      "love_negative": [
         {"ID": 1, "Message": "Tình yêu đôi khi chỉ là một giấc mơ tan vỡ khi tỉnh giấc."},
         {"ID": 2, "Message": "Không phải mọi ai yêu nhau đều có thể ở bên nhau mãi mãi."},
         {"ID": 3, "Message": "Tình yêu có thể mang lại hạnh phúc, nhưng cũng dễ dàng để lại những vết thương."},
@@ -44,7 +44,7 @@
         {"ID": 19, "Message": "Tình yêu có thể khiến con tim rực cháy, nhưng cũng dễ dàng thiêu rụi mọi thứ."},
         {"ID": 20, "Message": "Đôi khi, cách duy nhất để yêu là buông tay."}
       ],
-      "neutral": [
+      "love_neutral": [
         {"ID": 1, "Message": "Tình yêu là một phần tự nhiên trong cuộc sống, như ánh sáng và bóng tối."},
         {"ID": 2, "Message": "Không có một định nghĩa duy nhất nào có thể bao quát hết ý nghĩa của tình yêu."},
         {"ID": 3, "Message": "Tình yêu có thể bắt đầu từ những điều nhỏ bé nhất."},
@@ -65,6 +65,71 @@
         {"ID": 18, "Message": "Tình yêu không có đúng sai, chỉ có cách chúng ta lựa chọn trải nghiệm nó."},
         {"ID": 19, "Message": "Tình yêu là một phần của cuộc sống, nhưng không phải là toàn bộ cuộc sống."},
         {"ID": 20, "Message": "Tình yêu là một câu chuyện phức tạp, với mỗi người viết lên một chương riêng."}
-      ]
+      ],
+    "life_positive": [
+        {"ID": 1, "Message": "Cuộc sống là một hành trình đầy ắp những điều kỳ diệu."},
+        {"ID": 2, "Message": "Mỗi ngày là một cơ hội để chúng ta trải nghiệm và học hỏi."},
+        {"ID": 3, "Message": "Hạnh phúc không phải là mục tiêu, mà là hành trình chúng ta đi qua."},
+        {"ID": 4, "Message": "Cuộc sống trở nên ý nghĩa hơn khi chúng ta biết trân trọng những điều nhỏ bé."},
+        {"ID": 5, "Message": "Mỗi ngày là một quà tặng mà chúng ta nhận được từ trời."},
+        {"ID": 6, "Message": "Hãy sống hết mình, vì cuộc đời này chỉ có một lần."},
+        {"ID": 7, "Message": "Mỗi ngày mới là một cơ hội để bắt đầu lại từ đầu."},
+        {"ID": 8, "Message": "Hãy sống với đam mê và tận hưởng mọi khoảnh khắc."},
+        {"ID": 9, "Message": "Cuộc sống là một bức tranh, hãy tự mình vẽ lên nó."},
+        {"ID": 10, "Message": "Hãy sống không hối tiếc, không ân hận, và không ngừng mơ ước."},
+        {"ID": 11, "Message": "Mỗi ngày là một trang sách mới, hãy viết lên nó những điều tốt đẹp."},
+        {"ID": 12, "Message": "Hãy sống với lòng nhân hậu và tình yêu thương."},
+        {"ID": 13, "Message": "Cuộc sống không phải lúc nào cũng êm đềm, nhưng nó luôn đáng để trải nghiệm."},
+        {"ID": 14, "Message": "Hãy sống với niềm tin và hy vọng vào tương lai."},
+        {"ID": 15, "Message": "Mỗi ngày là một cơ hội để chúng ta trở nên tốt hơn."},
+        {"ID": 16, "Message": "Hãy sống với lòng biết ơn và sẻ chia."},
+        {"ID": 17, "Message": "Cuộc sống không phải lúc nào cũng dễ dàng, nhưng nó luôn đáng để sống."},
+        {"ID": 18, "Message": "Hãy sống với tâm hồn nhẹ nhàng và tràn đầy yêu thương."},
+        {"ID": 19, "Message": "Mỗi ngày là một cơ hội để chúng ta thay đổi và phát triển."},
+        {"ID": 20, "Message": "Hãy sống với niềm vui và sự lạc quan."}
+    ],
+    "life_negative": [
+        {"ID": 1, "Message": "Cuộc sống đôi khi là một trò chơi không công bằng."},
+        {"ID": 2, "Message": "Không phải mọi nỗ lực đều được đền đáp."},
+        {"ID": 3, "Message": "Đôi khi, cuộc sống không như chúng ta mong đợi."},
+        {"ID": 4, "Message": "Hạnh phúc không phải lúc nào cũng đến với những người làm việc chăm chỉ."},
+        {"ID": 5, "Message": "Cuộc sống không phải lúc nào cũng công bằng."},
+        {"ID": 6, "Message": "Không phải mọi người đều có cơ hội để thành công."},
+        {"ID": 7, "Message": "Đôi khi, cuộc sống chỉ là một chuỗi những thất bại."},
+        {"ID": 8, "Message": "Hãy chuẩn bị cho những thất bại và thử thách trong cuộc sống."},
+        {"ID": 9, "Message": "Cuộc sống không phải lúc nào cũng đẹp như trong mơ."},
+        {"ID": 10, "Message": "Không phải mọi người đều có cơ hội để thể hiện bản thân."},
+        {"ID": 11, "Message": "Đôi khi, cuộc sống chỉ là một trò chơi của số phận."},
+        {"ID": 12, "Message": "Hạnh phúc không phải lúc nào cũng ở đâu đó phía trước."},
+        {"ID": 13, "Message": "Cuộc sống không phải lúc nào cũng dễ dàng."},
+        {"ID": 14, "Message": "Không phải mọi ai yêu nhau đều có thể ở bên nhau mãi mãi."},
+        {"ID": 15, "Message": "Đôi khi, cuộc sống chỉ là một chuỗi những lựa chọn khó khăn."},
+        {"ID": 16, "Message": "Hãy chuẩn bị cho những thất bại và thử thách trong cuộc sống."},
+        {"ID": 17, "Message": "Cuộc sống không phải lúc nào cũng đẹp như trong mơ."},
+        {"ID": 18, "Message": "Không phải mọi người đều có cơ hội để thể hiện bản thân."},
+        {"ID": 19, "Message": "Đôi khi, cuộc sống chỉ là một trò chơi của số phận."},
+        {"ID": 20, "Message": "Hạnh phúc không phải lúc nào cũng ở đâu đó phía trước."}
+    ],
+    "life_neutral": [
+        {"ID": 1, "Message": "Cuộc sống là một hành trình đầy ắp những điều kỳ diệu."},
+        {"ID": 2, "Message": "Mỗi ngày là một cơ hội để chúng ta trải nghiệm và học hỏi."},
+        {"ID": 3, "Message": "Hạnh phúc không phải là mục tiêu, mà là hành trình chúng ta đi qua."},
+        {"ID": 4, "Message": "Cuộc sống trở nên ý nghĩa hơn khi chúng ta biết trân trọng những điều nhỏ bé."},
+        {"ID": 5, "Message": "Mỗi ngày là một quà tặng mà chúng ta nhận được từ trời."},
+        {"ID": 6, "Message": "Hãy sống hết mình, vì cuộc đời này chỉ có một lần."},
+        {"ID": 7, "Message": "Mỗi ngày mới là một cơ hội để bắt đầu lại từ đầu."},
+        {"ID": 8, "Message": "Hãy sống với đam mê và tận hưởng mọi khoảnh khắc."},
+        {"ID": 9, "Message": "Cuộc sống là một bức tranh, hãy tự mình vẽ lên nó."},
+        {"ID": 10, "Message": "Hãy sống không hối tiếc, không ân hận, và không ngừng mơ ước."},
+        {"ID": 11, "Message": "Mỗi ngày là một trang sách mới, hãy viết lên nó những điều tốt đẹp."},
+        {"ID": 12, "Message": "Hãy sống với lòng nhân hậu và tình yêu thương."},
+        {"ID": 13, "Message": "Cuộc sống không phải lúc nào cũng êm đềm, nhưng nó luôn đáng để trải nghiệm."},
+        {"ID": 14, "Message": "Hãy sống với niềm tin và hy vọng vào tương lai."},
+        {"ID": 15, "Message": "Mỗi ngày là một cơ hội để chúng ta trở nên tốt hơn."},
+        {"ID": 16, "Message": "Hãy sống với lòng biết ơn và sẻ chia."},
+        {"ID": 17, "Message": "Cuộc sống không phải lúc nào cũng dễ dàng, nhưng nó luôn đáng để sống."},
+        {"ID": 18, "Message": "Hãy sống với tâm hồn nhẹ nhàng và tràn đầy yêu thương."},
+        {"ID": 19, "Message": "Mỗi ngày là một cơ hội để chúng ta thay đổi và phát triển."},
+        {"ID": 20, "Message": "Hãy sống với niềm vui và sự lạc quan."}]
     }
   }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dự Đoán Thần Số Học</title>
+  <link rel="stylesheet" href="numerology/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dự Đoán Thần Số Học</h1>
+    <form id="numerologyForm" class="form">
+      <div class="input-group">
+        <label>Ngày:</label>
+        <select id="day" required></select>
+      </div>
+      <div class="input-group">
+        <label>Tháng:</label>
+        <select id="month" required></select>
+      </div>
+      <div class="input-group">
+        <label>Năm:</label>
+        <select id="year" required></select>
+      </div>
+      <button type="submit" class="btn">Dự đoán</button>
+    </form>
+    <div id="result"></div>
+    <button onclick="window.location.href='menu.html'" class="btn">Back to Menu</button>
+  </div>
+  <script src="numerology/script.js"></script>
+</body>
+</html>
