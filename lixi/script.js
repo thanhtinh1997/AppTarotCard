@@ -16,6 +16,8 @@ const resetBtn = document.getElementById("reset-btn");
 const items = document.querySelectorAll(".lixi-item");
 const rewardImage = document.getElementById("reward-image");
 const suspenseImage = document.getElementById("suspense-image");
+const userCodeInput = document.getElementById("user-code");
+const startBtn = document.getElementById("start-btn");
 
 // Bắt đầu chuyển động
 slider.classList.add("start-rotate");
@@ -38,19 +40,33 @@ function getRandomReward() {
   }
 }
 
-// Function to create a firework element
-function createFirework() {
-  const firework = document.createElement('div');
-  firework.classList.add('firework');
-  firework.style.left = `${Math.random() * 100}vw`;
-  firework.style.top = `${Math.random() * 100}vh`;
-  document.getElementById('fireworks-container').appendChild(firework);
-
-  // Remove the firework after animation ends
-  firework.addEventListener('animationend', () => {
-    firework.remove();
-  });
+// Hàm lưu kết quả vào local storage
+function saveResult(code, reward) {
+  let history = JSON.parse(localStorage.getItem("drawHistory")) || {};
+  history[code] = reward;
+  localStorage.setItem("drawHistory", JSON.stringify(history));
 }
+
+// Xử lý khi bấm vào nút bắt đầu
+startBtn.addEventListener("click", () => {
+  const userCode = userCodeInput.value.trim();
+  if (!userCode) {
+    alert("Vui lòng nhập mã của bạn!");
+    return;
+  }
+
+  // Kiểm tra mã đã được sử dụng chưa
+  const history = JSON.parse(localStorage.getItem("drawHistory")) || {};
+  if (history[userCode]) {
+    alert(`Mã này đã được sử dụng và nhận được ${history[userCode]} VND!`);
+    return;
+  }
+
+  // Hiển thị các bao lì xì để người dùng chọn
+  slider.style.display = "block";
+  startBtn.style.display = "none";
+  userCodeInput.style.display = "none";
+});
 
 // Xử lý khi bấm vào từng bao lì xì
 items.forEach((item) => {
@@ -83,10 +99,9 @@ items.forEach((item) => {
       // Hiển thị hình ảnh mệnh giá tương ứng
       rewardImage.style.backgroundImage = `url('lixi/img/${reward}.png')`;
 
-      // Tạo hiệu ứng bắn pháo hoa
-      for (let i = 0; i < 10; i++) {
-        createFirework();
-      }
+      // Lưu kết quả vào local storage
+      const userCode = userCodeInput.value.trim();
+      saveResult(userCode, reward);
 
       // Di chuyển slider ra khỏi màn hình
       slider.style.transform = "translateX(-100vw)";
@@ -109,6 +124,10 @@ items.forEach((item) => {
 resetBtn.addEventListener("click", () => {
   // Reset trạng thái
   resetBtn.style.display = "none";
+  slider.style.display = "none";
+  startBtn.style.display = "inline-block";
+  userCodeInput.style.display = "inline-block";
+  userCodeInput.value = "";
 
   items.forEach((item) => {
     item.style.transform = "rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(200px)"; // Đưa về kích thước và vị trí ban đầu
