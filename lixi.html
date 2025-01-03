@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rút Bao Lì Xì</title>
+  <link rel="stylesheet" href="lixi/style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>Rút Bao Lì Xì</h1>
+    <p>Chọn một bao lì xì để nhận tiền may mắn!</p>
+    <div id="lixi-slider" style="--quantity: 10">
+      <!-- 5 hình bao lì xì -->
+      <div class="lixi-item" style="--position: 1"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+      <div class="lixi-item" style="--position: 2"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+      <div class="lixi-item" style="--position: 3"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+      <div class="lixi-item" style="--position: 4"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+      <div class="lixi-item" style="--position: 5"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+      <div class="lixi-item" style="--position: 6"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+      <div class="lixi-item" style="--position: 7"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+      <div class="lixi-item" style="--position: 8"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+      <div class="lixi-item" style="--position: 9"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+      <div class="lixi-item" style="--position: 10"><img src="lixi/img/lixi.png" alt="Lì Xì"></div>
+    </div>
+    <div id="result-container">
+      <div id="result"></div>
+      <div id="reward-image"></div>
+    </div>
+    <!-- Hình ảnh hồi hộp -->
+    <img id="suspense-image" src="lixi/img/suspense.gif" alt="Hồi hộp" style="display: none;">
+    <!-- Nút rút lại -->
+    <button id="reset-btn" style="display: none;">Rút Lại</button>
+  </div>
+  <div id="flower-container"></div>
+  <div id="fireworks-container"></div>
+  <script src="lixi/script.js"></script>
+</body>
+</html>
